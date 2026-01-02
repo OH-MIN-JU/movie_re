@@ -1,0 +1,130 @@
+.section {
+    margin-top: 48px;
+    width: 100%;
+    max-width: 1600px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  .title {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .moreButton {
+    background: none;
+    border: none;
+    color: #cacaca;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+    padding: 0;
+  }
+
+  .moreButton:hover {
+    opacity: 0.7;
+  }
+
+  .moreButton:active {
+    opacity: 0.5;
+  }
+  
+  .rowContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .row {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    flex: 1;
+  }
+  
+  .row::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .row {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollButton {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+  }
+
+  .scrollButton:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+
+  .scrollButton:active {
+    transform: scale(0.95);
+  }
+  
+  .card {
+    position: relative;
+    flex: 0 0 auto;
+    width: 250px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .poster {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    border: none;
+    outline: none;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 6px 8px;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0)
+    );
+  }
+  
+  .year {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
